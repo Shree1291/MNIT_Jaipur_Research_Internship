@@ -1,0 +1,32 @@
+{
+	"name": "mern-stack-snippets",
+	"displayName": "MERN Stack Snippets",
+	"description": "Some important Node.js backend snippets you might need! Includes express boilerplates and more coming soon!",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.56.0"
+	},
+	"publisher": "AtharvaDeosthale",
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.code-snippets"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "3a2d3487-c3e7-4df4-a11a-26bf020e661e",
+		"publisherId": "16b8a65c-1167-4bae-bdaa-6095e37296b2",
+		"publisherDisplayName": "Atharva Deosthale",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1705485329132,
+		"pinned": false,
+		"preRelease": false
+	}
+}

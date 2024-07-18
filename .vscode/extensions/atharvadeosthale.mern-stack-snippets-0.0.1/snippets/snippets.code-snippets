@@ -1,0 +1,82 @@
+{
+  "Express Boilerplate": {
+    "prefix": ["exp", "express", "eb"],
+    "body": [
+      "const express = require(\"express\");",
+      "const app = express();",
+      "const PORT = ${1:5000};",
+      "",
+      "app.use(express.json());",
+      "app.use(express.urlencoded({ extended: true }));",
+      "",
+      "app.get(\"/\", (req, res) => {\t$0});",
+      "",
+      "app.listen(PORT, () => console.log(\"Server running on port \" + PORT));"
+    ],
+    "description": "Basic express boilerplate"
+  },
+
+  "Express GET Request": {
+    "prefix": ["ge", "get", "expressget"],
+    "body": ["${1:app}.get(\"${2}\", (req, res) => {\n\t$0\n});"],
+    "description": "GET request"
+  },
+
+  "Express POST Request": {
+    "prefix": ["po", "post", "expresspost"],
+    "body": [
+      "${1:app}.post(\"${2}\", (req, res) => {\n\tconst {${3}} = req.body;\n$0\n});"
+    ],
+    "description": "POST request"
+  },
+
+  "Express PUT Request": {
+    "prefix": ["pu", "put", "expressput"],
+    "body": [
+      "${1:app}.put(\"${2}\", (req, res) => {\n\tconst {${3}} = req.body;\n$0\n});"
+    ],
+    "description": "PUT request"
+  },
+
+  "Express DELETE Request": {
+    "prefix": ["de", "delete", "expressdelete"],
+    "body": ["${1:app}.delete(\"${2}\", (req, res) => {\n\t$0\n});"],
+    "description": "DELETE request"
+  },
+
+  "General Import": {
+    "prefix": ["import", "imp", "i", "generalimport"],
+    "description": "General module import",
+    "body": ["const ${1:module} = require(\"${2:module}\");"]
+  },
+
+  "Import Express": {
+    "prefix": ["ei", "expi", "e"],
+    "description": "Import Express",
+    "body": ["const ${1:express} = require(\"express\");"]
+  },
+
+  // require mongoose
+  "Import Mongoose": {
+    "prefix": ["mi", "mongooseimport", "mong"],
+    "description": "Import Mongoose",
+    "body": ["const ${1:mongoose} = require(\"mongoose\");"]
+  },
+
+  "Mongoose Schema": {
+    "prefix": ["ms", "schema", "mongooseschema"],
+    "description": "Mongoose Schema",
+    "body": ["const ${1:User}Schema = ${2:mongoose}.Schema({", "\t$0", "});"]
+  },
+
+  "Mongoose Connect": {
+    "prefix": ["mongooseconnect", "mc", "mongoosecon"],
+    "body": [
+      "${1:mongoose}.connect(${2}, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {",
+      "\tif(err) console.error(\"Error connecting to MongoDB!\");",
+      "\telse console.log(\"Connected to MongoDB!\");",
+      "});"
+    ],
+    "description": "Connect to MongoDB"
+  }
+}
