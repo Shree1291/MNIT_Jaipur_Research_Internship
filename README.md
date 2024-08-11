@@ -6,3 +6,5 @@ The dataset contains of 3 classes:
 1)OSCC
 2)Dysplasia
 3)Without dysplasia
+
+#Dataset Link : https://drive.google.com/file/d/1jsMUDlvsXWQu2BansJz73mAErVyNg_g7/view?usp=sharing
